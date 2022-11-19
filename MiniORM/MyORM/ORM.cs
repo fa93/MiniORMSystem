@@ -124,16 +124,6 @@ namespace MyORM
             connection.ExecuteDeleteQuery(data, objectName);
         }
 
-        internal void Delete(int id)
-        {
-            var type = typeof(T);
-            var objectName = type.Name;
-            Dictionary<string, object> data = new();
-
-            data.Add(objectName, id);
-
-        }
-
         internal void GetById(int id)
         {
             var type = typeof(T);

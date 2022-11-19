@@ -35,8 +35,8 @@ Course course = new()
 
         PhoneNumbers = new List<Phone>
         {
-            new Phone(){Number = "1234678", Extension = "439", CountryCode = "088"/*,InstructorId=6*/},//Id for update
-            new Phone(){Number = "7865434", Extension = "440", CountryCode = "088"/*,InstructorId=6*/}//Id for update
+            new Phone(){Number = "1234678", Extension = "439", CountryCode = "088",InstructorId=6},//Id for update
+            new Phone(){Number = "7865434", Extension = "440", CountryCode = "088",InstructorId=6}//Id for update
         }
 
     },
@@ -51,8 +51,8 @@ Course course = new()
             Description="a linear data structure, in which the elements are not stored at contiguous memory locations",
             Sessions=new List<Session>()
             {
-                new Session{DurationInHour = 2, LearningObjective = "Types of Linked List"/*, TopicId=6*/},//Id for update
-                new Session{DurationInHour = 3, LearningObjective="Usage of Linked List"/*, TopicId=6*/}//Id for update
+                new Session{DurationInHour = 2, LearningObjective = "Types of Linked List", TopicId=6},//Id for update
+                new Session{DurationInHour = 3, LearningObjective="Usage of Linked List", TopicId=6}//Id for update
             }
         }
 
@@ -73,9 +73,8 @@ Course course = new()
 
 ORM<Course> orm = new();
 
-orm.Insert(course);
+//orm.Insert(course);
 //orm.Update(course);
-//orm.Delete(course);
-//orm.Delete(course.Id);
+orm.Delete(course);
 //orm.GetById(course.Id);
 //orm.GetAll()
