@@ -6,12 +6,15 @@ This is a console app project to practice and create something like ORM. I have 
 
 ## Installation
 ### (Step-1) Clone the project
+
 ```bash
 https://github.com/fa93/MiniORMSystem.git
 ```
 ### (Step-2) Create your own database manually 
 <img width="132" alt="tablesORM" src="https://user-images.githubusercontent.com/61489549/202840188-79b88b65-f46b-4eaf-8964-5cfce967d10f.PNG">
+
 ### (Step-3) Add a file named DefaultConnection to keep your own connection string 
+
 ```bash
 public readonly string ConnectionString;
         public DefaultConnection()
@@ -20,6 +23,7 @@ public readonly string ConnectionString;
         }
 ```
 ### (Step-4) Add and Update Migrations
+
 ```bash
 dotnet ef migrations add AnyNameTable --project ProjectName --context DbContextName -o Data/Migrations
 dotnet ef database update --project ProjectName --context DbContextName
