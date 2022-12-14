@@ -22,7 +22,7 @@ public readonly string ConnectionString;
             ConnectionString = "";
         }
 ```
-### (Step-4) Add and Update Migrations
+### (Step-4) Add and Update Migrations by running the following commands on ``` Package Manager Console ```
 
 ```bash
 dotnet ef migrations add AnyNameTable --project ProjectName --context DbContextName -o Data/Migrations
