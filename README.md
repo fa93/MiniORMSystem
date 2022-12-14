@@ -9,7 +9,9 @@ This is a console app project to practice and create something like ORM. I have 
 ```bash
 https://github.com/fa93/MiniORMSystem.git
 ```
-### (Step-2) Add a file named DefaultConnection to keep your own connection string 
+### (Step-2) Create your own database manually 
+<img width="132" alt="tablesORM" src="https://user-images.githubusercontent.com/61489549/202840188-79b88b65-f46b-4eaf-8964-5cfce967d10f.PNG">
+### (Step-3) Add a file named DefaultConnection to keep your own connection string 
 ```bash
 public readonly string ConnectionString;
         public DefaultConnection()
@@ -17,10 +19,13 @@ public readonly string ConnectionString;
             ConnectionString = "";
         }
 ```
-### (Step-3) Create your own database manually 
-<img width="132" alt="tablesORM" src="https://user-images.githubusercontent.com/61489549/202840188-79b88b65-f46b-4eaf-8964-5cfce967d10f.PNG">
+### (Step-4) Add and Update Migrations
+```bash
+dotnet ef migrations add AnyNameTable --project ProjectName --context DbContextName -o Data/Migrations
+dotnet ef database update --project ProjectName --context DbContextName
+```
 
-### (Step-4) keep the program.cs file like the below and Run the project
+### (Step-5) keep the program.cs file like the below and Run the project
 <img width="270" alt="runORM" src="https://user-images.githubusercontent.com/61489549/202840400-a538a65d-7211-4337-b290-9858cdd04a02.PNG">
 
 ## Pre-requisites
