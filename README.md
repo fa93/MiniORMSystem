@@ -1,5 +1,5 @@
 # MiniORMSystem
-This is a console app project to practice and create something like ORM. I have used reflection, recursion and ADO.NET to create this dynamic mini orm system. I have tried to maintain some level of OOD concept. It can manage nested objects as well. 
+This is a console app project to practice and create something like Object Relation Mapper. I have used reflection, recursion and ADO.NET to create this dynamic mini orm system. I have tried to maintain some level of OOD concept. It can manage nested objects as well. 
 
 ## Demo
 <img width="714" alt="demoORM" src="https://user-images.githubusercontent.com/61489549/202839301-8ba6e516-5885-420d-8962-371c158cc6de.PNG">
